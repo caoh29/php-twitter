@@ -29,6 +29,7 @@
 \
 \
 **8.** Run the Apache server by pressing on **START**:
+\
 ![alt text](./images/xampp_example.png)
 \
 \
