@@ -5,8 +5,8 @@
 **1.** To get started first you will need to clone this repository by using:\
  `git clone https://github.com/caoh29/php-twitter.git`
 
-**2.** Then you will need to download Docker Desktop:\  
- `https://www.docker.com/products/docker-desktop/`
+**2.** Then you will need to download Docker Desktop:\
+`https://www.docker.com/products/docker-desktop/`
 
 **3.** Install Docker desktop and Execute it!\
 
