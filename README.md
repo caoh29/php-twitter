@@ -28,7 +28,7 @@
 **7.** Install it and Execute it
 \
 \
-**8.** Run the Apache server by pressing on START:
+**8.** Run the Apache server by pressing on **START**:
 ![alt text](./images/xampp_example.png)
 \
 \
