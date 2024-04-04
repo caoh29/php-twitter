@@ -35,3 +35,7 @@
 \
 **9.** That's it for the configuration, now go to your favourite browser and search:
 `http://localhost/assign-2/index.php`
+\
+\
+**10.** To remove the container in the background use:
+`docker-compose down`
