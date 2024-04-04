@@ -19,8 +19,8 @@
 **6.** You will also need an Apache server, I suggest you to install XAMPP:\
  `https://www.apachefriends.org/download.html`
 
-**7.** Install it and Execute it\
-
+**7.** Install it and Execute it
+\
 **8.** Run the Apache server by pressing on START:\
  ![alt text](./images/xampp_example.png)
 
