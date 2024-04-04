@@ -1,6 +1,6 @@
-## WELCOME TO TWITTER PHP CLONE
+# WELCOME TO TWITTER PHP CLONE
 
-# Steps:
+## Steps:
 
 1. To get started first you will need to clone this repository by using:
    `git clone https://github.com/caoh29/php-twitter.git`
@@ -13,7 +13,7 @@
 4. Go to the /db folder
    `cd db`
 
-5. Execute the following command to download a MySQL database image and Run it in the background for future queries.
+5. Execute the following command to download a MySQL database image and Run it in the background for future queries:
    `docker-compose up -d`
 
 6. You will also need an Apache server, I suggest you to install XAMPP:
