@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <!-- Link to your custom CSS or Bootstrap -->
+    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/update_delete_profile.css">
 </head>
 <body>

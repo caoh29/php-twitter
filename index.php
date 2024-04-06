@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed</title>
     <!-- Link to your custom CSS or Bootstrap -->
+    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
@@ -15,14 +16,16 @@
     <?php include './logic/get_posts.php'; ?>
     
     <!-- Content Section -->
-    <div class="container">
-        <h2>Posts</h2>
+    <main id="main_index">
+        <h1>Posts</h1>
         <?php
             if(isset($_SESSION['user_id'])) {
                 echo '<form action="./logic/add_post.php" method="POST">';
+                echo '<div class="post_wrap">';
                 echo '<textarea id="content" name="content"></textarea>';
-                echo '<input type="submit" value="Add Post"/>';
-                echo '</input>';
+                echo '<input type="submit" value="Post"/>';
+                echo '</div>';
+                echo '</form>';
             }
         ?>
         <ul>
@@ -30,20 +33,22 @@
             foreach ($posts as $post) {
                 echo 
                 '<li>' .
-                    '<h5>' .
-                        $post['username'] .
-                    '</h5>' .
-                    '<p>' .
-                        $post['content'] .
-                    '</p>' .
-                    '<span>' .
-                        $post['created_at'] .
-                    '</span>' .
+                    '<div class="post_wrap">' .
+                        '<h3>' .
+                            $post['username'] .
+                        '</h3>' .
+                        '<p>' .
+                            $post['content'] .
+                        '</p>' .
+                        '<span>' .
+                            $post['created_at'] .
+                        '</span>' .
+                    '</div>' .
                 '</li>';
             }
             ?>
         </ul>
-    </div>
+    </main>
 
     <!-- Footer -->
     <?php include './ui/footer.php'; ?>

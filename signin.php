@@ -95,6 +95,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <!-- Link to your custom CSS or Bootstrap -->
+    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/signin.css">
 </head>
 <body>

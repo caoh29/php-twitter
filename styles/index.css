@@ -1,0 +1,94 @@
+#main_index h1 {
+  border-bottom: 1px solid gray;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  color: rgb(15, 137, 219);;
+}
+
+#main_index form {
+  border-bottom: 1px solid gray;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_index form .post_wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_index form textarea {
+  border: 1px solid gray;
+  border-radius: 15px;
+  width: 100%;
+  height: 15vh;
+  padding: 1rem;
+}
+
+#main_index form input[type=submit] {
+  background-color: rgb(15, 137, 219);
+  border-radius: 25px;
+  color: white;
+  border: none;
+  width: 75px;
+  height: 50px;
+  align-self: flex-end;
+}
+
+#main_index form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+#main_index ul {
+  width: 100%;
+}
+
+#main_index ul li {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 1.5rem;
+}
+
+#main_index ul li:first-child {
+  border-top: none;
+}
+
+
+#main_index ul li h3 {
+  color: rgb(15, 137, 219);
+}
+
+#main_index ul li p {
+  padding: 1rem 0;
+}
+
+#main_index ul li span {
+  font-size: small;
+}
+
+@media screen and (min-width: 700px) {
+  #main_index ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #main_index form .post_wrap {
+    width: 50vw;
+  }
+
+  #main_index .post_wrap {
+    width: 50vw;
+  }
+}
