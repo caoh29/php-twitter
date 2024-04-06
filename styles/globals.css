@@ -40,6 +40,9 @@ a {
   text-decoration: none;
 }
 
+/* FONT */
+
+
 header {
   grid-column: 1;
   position: sticky;

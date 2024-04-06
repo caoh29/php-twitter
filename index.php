@@ -17,12 +17,12 @@
     
     <!-- Content Section -->
     <main id="main_index">
-        <h1>Posts</h1>
+        <h1>Latest Trends</h1>
         <?php
             if(isset($_SESSION['user_id'])) {
                 echo '<form action="./logic/add_post.php" method="POST">';
                 echo '<div class="post_wrap">';
-                echo '<textarea id="content" name="content"></textarea>';
+                echo '<textarea id="content" name="content" placeholder="What are you thinking about?"></textarea>';
                 echo '<input type="submit" value="Post"/>';
                 echo '</div>';
                 echo '</form>';
@@ -31,18 +31,23 @@
         <ul>
             <?php
             foreach ($posts as $post) {
-                echo 
+                echo
                 '<li>' .
                     '<div class="post_wrap">' .
-                        '<h3>' .
-                            $post['username'] .
-                        '</h3>' .
-                        '<p>' .
-                            $post['content'] .
-                        '</p>' .
-                        '<span>' .
-                            $post['created_at'] .
-                        '</span>' .
+                        '<div class="post_avatar">' .
+                            '<img src="' . $post['profile_picture'] . '" alt="avatar">' .
+                        '</div>' .
+                        '<div class="post_text">' .
+                            '<h3>' .
+                                $post['username'] .
+                            '</h3>' .
+                            '<p>' .
+                                $post['content'] .
+                            '</p>' .
+                            '<span>' .
+                                $post['created_at'] .
+                            '</span>' .
+                        '</div>' .
                     '</div>' .
                 '</li>';
             }
