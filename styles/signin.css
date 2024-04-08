@@ -1,0 +1,32 @@
+#main_signin {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#main_signin form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+#main_signin form .username_wrapper, #main_signin form .password_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+#main_signin form input[type=text], #main_signin form input[type=password] {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+#main_signin form .submit_wrapper {
+  display: flex;
+  justify-content: center;
+}

@@ -15,6 +15,9 @@ body, html{
   color: white;
   display: grid;
   grid-template-columns: 80px calc(100vw - 80px);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 input, button, textarea, select{
@@ -38,9 +41,30 @@ html:focus-within{
 
 a {
   text-decoration: none;
+  color: rgb(15, 137, 219);
 }
 
-/* FONT */
+input[type=submit] {
+  border: 2px solid white;
+  padding: 15px 20px;
+  font-family: 'Hedvig Letters Serif', serif;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  background-color: rgb(15, 137, 219);
+  border-radius: 25px;
+  transition: all 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;
+  width: 100px;
+}
+
+input[type=submit]:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  scale: 1.1;
+}
 
 
 header {

@@ -8,6 +8,9 @@
     <!-- Link to your custom CSS or Bootstrap -->
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -22,7 +25,7 @@
             if(isset($_SESSION['user_id'])) {
                 echo '<form action="./logic/add_post.php" method="POST">';
                 echo '<div class="post_wrap">';
-                echo '<textarea id="content" name="content" placeholder="What are you thinking about?"></textarea>';
+                echo '<textarea required id="content" name="content" placeholder="What are you thinking about?"></textarea>';
                 echo '<input type="submit" value="Post"/>';
                 echo '</div>';
                 echo '</form>';

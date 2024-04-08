@@ -97,26 +97,29 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <!-- Link to your custom CSS or Bootstrap -->
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
+    <main id="main_signin">
         <h2>Sign In</h2>
         <form action="" method="post">
-            <div>
+            <div class="username_wrapper">
                 <label>Username</label>
                 <input type="text" name="username" value="<?php echo $username; ?>">
                 <span><?php echo $username_err; ?></span>
             </div>    
-            <div>
+            <div class="password_wrapper">
                 <label>Password</label>
                 <input type="password" name="password">
                 <span><?php echo $password_err; ?></span>
             </div>
-            <div>
+            <div class="submit_wrapper">
                 <input type="submit" value="Login">
             </div>
             <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
         </form>
-    </div>    
+    </main>    
 </body>
 </html>
