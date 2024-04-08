@@ -27,12 +27,12 @@
             
             <div class="bio_wrapper">
                 <label for="bio">Bio:</label>
-                <textarea id="bio" name="bio"></textarea>
+                <textarea id="bio" name="bio" required></textarea>
             </div>
             
             <div class="avatar_wrapper">
                 <label for="avatar">Choose a profile picture:</label>
-                <input type="file" id="avatar" name="avatar" accept="image/*">
+                <input type="file" id="avatar" name="avatar" accept="image/*" required>
             </div>
             
             <div class="submit_wrapper">
