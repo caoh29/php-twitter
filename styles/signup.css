@@ -1,0 +1,35 @@
+#main_signup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#main_signup form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+#main_signup form .username_wrapper, #main_signup form .password_wrapper, #main_signup form .email_wrapper {
+  display: grid;
+  grid-template-columns: 2;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+#main_signup form input[type=text], #main_signup form input[type=password], #main_signup form input[type=email] {
+  padding: 7px;
+  border-radius: 15px;
+  width: 100%;
+  grid-column: 2;
+}
+
+#main_signup form .submit_wrapper {
+  display: flex;
+  justify-content: center;
+}

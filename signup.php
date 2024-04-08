@@ -36,19 +36,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>Register</h2>
-    <form action="" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
+    <main id="main_signup">
+        <h2>Register</h2>
+        <form action="" method="post">
+            <div class="username_wrapper">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        
-        <input type="submit" value="Register">
-        <p>Already have an account? <a href="signin.php">Sign in now</a>.</p>
-    </form>
+            <div class="email_wrapper">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <div class="password_wrapper">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            
+            <div class="submit_wrapper">
+                <input type="submit" value="Register">
+            </div>
+            <p>Already have an account? <a href="signin.php">Sign in now</a>.</p>
+        </form>
+    </main>
 </body>
 </html>

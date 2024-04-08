@@ -22,7 +22,7 @@
 }
 
 #main_signin form input[type=text], #main_signin form input[type=password] {
-  padding: 5px;
+  padding: 7px;
   border-radius: 15px;
 }
 
