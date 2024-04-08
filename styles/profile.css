@@ -1,3 +1,32 @@
-h2 {
-  color: green;
+#main_profile {
+  gap: 1rem;
+  width: 400px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+#main_profile h2 {
+  color: rgb(15, 137, 219);
+}
+
+#main_profile .avatar_wrapper {
+  width: 100px;
+  height: 100px;
+  border: 1px gray solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#main_profile .avatar_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#main_profile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
 }

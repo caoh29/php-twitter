@@ -19,11 +19,13 @@
     <?php include './logic/get_posts_by_user.php'; ?>
     
     <!-- Content Section -->
-    <div class="container">
+    <main id="main_profile">
         <h2>Profile</h2>
         <?php 
             if (isset($posts[0]['profile_picture'])) {
+                echo '<div class="avatar_wrapper">';
                 echo '<img src="' . $posts[0]['profile_picture'] . '" alt="' . $posts[0]['username'] . '"/>';
+                echo '</div>';
             }
         ?>
         <h3>
@@ -65,7 +67,7 @@
             }
             ?>
         </ul>
-    </div>
+    </main>
 
     <!-- Footer -->
     <?php include './ui/footer.php'; ?>
