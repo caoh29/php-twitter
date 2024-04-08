@@ -1,0 +1,47 @@
+#main_update {
+  gap: 1rem;
+  width: 400px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+#main_update h2 {
+  color: rgb(15, 137, 219);
+}
+
+#main_update #update_form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+#main_update #update_form .username_wrapper, #main_update #update_form .bio_wrapper, #main_update #update_form .avatar_wrapper {
+  display: grid;
+  grid-template-columns: 2;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+#main_update #update_form input[type=text], #main_update #update_form textarea {
+  padding: 7px;
+  border-radius: 15px;
+  width: 100%;
+  grid-column: 2;
+}
+
+#main_update #update_form .submit_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#main_update #delete_form input[type=submit]{
+  background-color: red;
+  width: 150px;
+}
+
+#main_update #delete_form input[type=submit]:hover{
+  width: 150px;
+}
+

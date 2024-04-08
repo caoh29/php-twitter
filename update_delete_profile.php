@@ -17,24 +17,32 @@
     <?php include './ui/header.php'; ?>
     
     <!-- Content Section -->
-    <div class="container">
+    <main id="main_update">
         <h2>Profile Settings</h2>
-        <form action="./logic/update_profile.php" method="POST" enctype="multipart/form-data">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <form id="update_form" action="./logic/update_profile.php" method="POST" enctype="multipart/form-data">
+            <div class="username_wrapper">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
             
-            <label for="bio">Bio:</label>
-            <textarea id="bio" name="bio"></textarea>
+            <div class="bio_wrapper">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
             
-            <label for="avatar">Choose a profile picture:</label>
-            <input type="file" id="avatar" name="avatar" accept="image/*" required>
+            <div class="avatar_wrapper">
+                <label for="avatar">Choose a profile picture:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/*">
+            </div>
             
-            <button type="submit">Submit</button>
+            <div class="submit_wrapper">
+                <input type="submit" value="Update">
+            </div>
         </form>
-        <form action="./logic/delete_profile.php" method="POST" enctype="multipart/form-data">
-            <button type='submit'>Delete Account</button>
+        <form id="delete_form" action="./logic/delete_profile.php" method="POST" enctype="multipart/form-data">
+            <input type='submit' value="Delete Account">
         </form>
-    </div>
+    </main>
 
     <!-- Footer -->
     <?php include './ui/footer.php'; ?>
